@@ -35,6 +35,7 @@ export default function App() {
                     marginVertical: 10,
                 }}
             >
+                {list.length === 0 && <Text>No List Exist</Text>}
                 {list?.map((item) => (
                     <ListCard removeItem={removeItem} item={item} />
                 ))}
